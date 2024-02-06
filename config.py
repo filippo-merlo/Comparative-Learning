@@ -72,13 +72,13 @@ types_all = ['color', 'material', 'shape', 'brightness',
 
 
 # paths and filenames
-bn_n_train = "bn_n_train.txt"
-bsn_novel_train_1 = "bsn_novel_train_1.txt"
-bsn_novel_train_2 = "bsn_novel_train_2.txt"
-bsn_novel_train_2_nw = "bsn_novel_train_2_nw.txt"
-bsn_novel_train_2_old = "bsn_novel_train_2_old.txt"
+bn_n_train = "bn_n_train.txt" # 23 attrs, -9 combs
+bsn_novel_train_1 = "bsn_novel_train_1.txt" #
+bsn_novel_train_2 = "bsn_novel_train_2.txt" #
+bsn_novel_train_2_nw = "bsn_novel_train_2_nw.txt" #
+bsn_novel_train_2_old = "bsn_novel_train_2_old.txt" #
 
-bn_n_test = "bn_n_test.txt"
+bn_n_test = "bn_n_test.txt" # 23 attrs, all combs
 bsn_novel_test_1 = "bsn_novel_test_1.txt"
 bsn_novel_test_2_nw = "bsn_novel_test_2_nw.txt"
 bsn_novel_test_2_old = "bsn_novel_test_2_old.txt"
