@@ -9,6 +9,7 @@ import torch.nn as nn
 import torch.optim as optim
 from PIL import Image
 import json
+from pprint import pprint
 
 from torch.utils.data import DataLoader
 
@@ -294,7 +295,7 @@ if __name__ == "__main__":
 	# evaluate with variations (dic_test)
 	evaluations['mare_var'].append(memory_evaluation(args.in_path, 'novel_test/', memory,
 						bn_n_train, ['rgba'], dic_test, vocabs))
-	
+	pprint(evaluations)
 	with open(os.path.join(args.out_path, evaluations), 'w') as json_file:
 		json.dump(evaluations, json_file)
 
