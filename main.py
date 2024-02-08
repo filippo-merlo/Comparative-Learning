@@ -296,7 +296,7 @@ if __name__ == "__main__":
 	evaluations['mare_var'].append(memory_evaluation(args.in_path, 'novel_train/', memory,
 						bn_n_train, ['rgba'], dic_test, vocabs))
 	pprint(evaluations)
-	with open(os.path.join(args.out_path, evaluations), 'w') as json_file:
+	with open(os.path.join(args.out_path, 'evaluations.json'), 'w') as json_file:
 		json.dump(evaluations, json_file)
 
 	## Train for new word acquisition
