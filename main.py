@@ -279,8 +279,8 @@ if __name__ == "__main__":
 	
 	# Train without 9 combs and 3 attrs
 	model_name = 'comparative_base_mem.pickle'
-	my_clip_train(args.in_path, args.out_path, model_name,
-				'novel_train/', bn_n_train, ['rgba'], dic_train, vocabs, args.pre_train)
+	#my_clip_train(args.in_path, args.out_path, model_name,
+	#			'novel_train/', bn_n_train, ['rgba'], dic_train, vocabs, args.pre_train)
 	
 	# Multi-Attribute Recognition Evaluation
 	in_memory = os.path.join(args.out_path, model_name)
