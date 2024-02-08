@@ -289,7 +289,7 @@ if __name__ == "__main__":
 	infile.close()
 
 	# evaluate with novel compositions
-	evaluations['mare_novel_comp'].append(memory_evaluation(args.in_path, 'test/', memory,
+	evaluations['mare_novel_comp'].append(memory_evaluation(args.in_path, 'novel_test/', memory,
 						bn_n_test, ['rgba'], dic_train, vocabs))
 	
 	# evaluate with variations (dic_test)
