@@ -289,15 +289,15 @@ if __name__ == "__main__":
 	infile.close()
 
 	# evaluate with novel compositions
-	#evaluations['mare_novel_comp'].append(memory_evaluation(args.in_path, 'novel_test/', memory,
-	#					bn_n_test, ['rgba'], dic_train, vocabs))
+	evaluations['mare_novel_comp'].append(memory_evaluation(args.in_path, 'novel_test/', memory,
+						bn_n_test, ['rgba'], dic_train, vocabs))
 	
 	# evaluate with variations (dic_test)
 	evaluations['mare_var'].append(memory_evaluation(args.in_path, 'novel_train/', memory,
 						bn_n_train, ['rgba'], dic_test, vocabs))
 	pprint(evaluations)
-	#with open(os.path.join(args.out_path, evaluations), 'w') as json_file:
-	#	json.dump(evaluations, json_file)
+	with open(os.path.join(args.out_path, evaluations), 'w') as json_file:
+		json.dump(evaluations, json_file)
 
 	## Train for new word acquisition
 	## without
