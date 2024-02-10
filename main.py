@@ -288,6 +288,7 @@ if __name__ == "__main__":
 	memory = pickle.load(infile)
 	infile.close()
 
+	# new stuff
 	# evaluate with novel compositions
 	evaluations['mare_novel_comp'].append(memory_evaluation(args.in_path, 'novel_test/', memory,
 						bn_n_test, ['rgba'], dic_train, vocabs))
