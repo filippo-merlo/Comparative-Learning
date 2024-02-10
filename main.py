@@ -293,8 +293,8 @@ if __name__ == "__main__":
 						bn_n_test, ['rgba'], dic_train, vocabs))
 	
 	# evaluate with variations (dic_test)
-	evaluations['mare_var'].append(memory_evaluation(args.in_path, 'novel_train/', memory,
-						bn_n_train, ['rgba'], dic_test, vocabs))
+	evaluations['mare_var'].append(memory_evaluation(args.in_path, 'test/', memory,
+						bn_test, ['rgba'], dic_test, vocabs))
 	pprint(evaluations)
 	with open(os.path.join(args.out_path, 'evaluations.json'), 'w') as json_file:
 		json.dump(evaluations, json_file)
